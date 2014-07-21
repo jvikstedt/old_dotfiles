@@ -1,6 +1,7 @@
 set encoding=utf8
 
 execute pathogen#infect()
+call pathogen#helptags()
 filetype plugin on
 filetype plugin indent on
 
