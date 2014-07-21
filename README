@@ -16,3 +16,7 @@ git submodule add git://github.com/blabla.git bundle/name_of_the_plugin
 if [ -f ~/.vim/Xmodmap ]; then
   xmodmap ~/.vim/Xmodmap
 fi
+
+
+# vim-gtk has clipboard support, atleast my xfce defaulted to vim-tiny
+# and had no support for clipboards
