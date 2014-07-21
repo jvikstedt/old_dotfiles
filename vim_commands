@@ -71,6 +71,9 @@ ctrl + i  - go to next location
 %s/target/new/gc  - replace target word with new word in whole file (g = whole file, c = verification by vim to replace)
 
 vip     - select current paragraph
+
+ctrl+p  - search for files
+:Ag     - Search from files
 -----------------------------
 
 snippets:
