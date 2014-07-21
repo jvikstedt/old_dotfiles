@@ -27,8 +27,6 @@ set nofoldenable
 set wildmenu
 set wildmode=list:longest,full
 
-set background=dark
-
 set backspace=indent,eol,start
 set history=1000
 set showcmd
@@ -66,15 +64,12 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" set leader key to comma
-let mapleader = ","
 
 " now set it up to change the status line based on mode
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
   au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
-
 
 " switch tabs with ö and ä
 :map ö :tabp <Enter>
@@ -84,6 +79,10 @@ endif
 " switch lines
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
+
+" hide search highlight
+noremap <C-l> :nohlsearch<CR>
+
 " indent with tab, shift tab and backspace
 nmap <TAB> >>
 nmap <S-TAB> <<
