@@ -38,9 +38,7 @@ set gcr=a:blinkon0
 set autoread
 set expandtab
 set tabstop=2
-set shiftwidth=2
 retab
-set autoindent
 set smartindent
 set smarttab
 set number
