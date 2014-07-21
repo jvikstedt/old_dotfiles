@@ -24,7 +24,6 @@ set scrolloff=2
 set laststatus=2
 set list listchars=tab:»·,trail:·
 set nofoldenable
-set clipboard=unnamed
 set wildmenu
 set wildmode=list:longest,full
 
@@ -49,6 +48,12 @@ set linebreak "Wrap lines at convenient points
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
+
+if has('unnamedplus')
+  set clipboard=unnamedplus
+else
+  set clipboard=unnamed
+endif
 
 " first, enable status line always
 set laststatus=2
