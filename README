@@ -7,7 +7,11 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 git submodule init
 git submodule update
 
+# To add new submodules use this:
+git submodule add git://github.com/blabla.git bundle/name_of_the_plugin
+
 # If you want to disable capslock and use it to go normal mode on vim use this
+# Add to .bash_profile
 # Load .Xmodmap
 if [ -f ~/.vim/Xmodmap ]; then
   xmodmap ~/.vim/Xmodmap
