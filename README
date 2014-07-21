@@ -1,8 +1,14 @@
 git clone git@github.com:Janno90/dotfiles.git ~/.vim
 
-// go to ~ folder and run this line to create link to vimrc file
+# go to ~ folder and run this line to create link to vimrc file
 ln -s ~/dotfiles/vimrc ~/.vimrc
 
-// go to .vim folder and run these commands:
+# go to .vim folder and run these commands:
 git submodule init
 git submodule update
+
+# If you want to disable capslock and use it to go normal mode on vim use this
+# Load .Xmodmap
+if [ -f ~/.vim/Xmodmap ]; then
+  xmodmap ~/.vim/Xmodmap
+fi
