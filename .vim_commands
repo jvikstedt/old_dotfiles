@@ -1,0 +1,275 @@
+#	- Search backwards for word thats under cursor
+$	- Go to end of line
+%	- Jump to match, for example { }
+^	- go to first non space character on line
+&	- ?
+*	- Search forward for word that under cursor
+(	- go to begin of the sentence
+) 	- go to end of the sentense
++	- next line
+-	- previous line
+0	- to start of the line
+
+
+w	- to the begin of the next word
+e	- to the end of the current word
+
+r	- replace one letter
+R	- insert mode
+
+y 	- 
+Y	- yank whole line
+
+u	- undo
+U	- undo line????
+
+i	- insert mode
+
+O	- move cursor up and create empty line
+o	- move cursor down and create empy line
+
+P	- paste before
+p	- paste after
+
+{	- to begin of the paragraph
+}	- to end of the pragrap
+
+A	- append to end of the line
+a	- append after current cursor pos
+
+s	- remove current letter and go to insert mode
+S	- remove letters after current pos on line and go to insert mode
+
+d	- delete current letter
+D	- delete whole line
+
+G	- go to end of file
+gg	- go to start of the file
+gf	- open file under cursor
+
+J	- join lines, meaning move line under to the end of current line
+L	- go to end of the file
+
+ZZ	- save and quit
+ZQ	- quit w/o saving
+
+
+x	- delete char
+
+b	- prev word
+
+n	- find next
+N	- find prev
+
+
+?word	- search backward
+/word	- search forward
+
+ctrl + o  - go to previous location
+ctrl + i  - go to next location
+
+%s/target/new/gc  - replace target word with new word in whole file (g = whole file, c = verification by vim to replace)
+
+vip     - select current paragraph
+-----------------------------
+
+snippets:
+
+if end block 			if
+if else end block 		ife
+Each block 			ea
+Each with index 		eawi
+Map 				map
+Collect 			col
+Select 				sel
+Scan 				sca
+Class 				cla
+
+-------------------------------------
+
+w: moves to the start of next word
+e: moves to the end of the word
+b: moves to beginning of the word
+
+- You can combine numbers with these, like first press 2 and then w to do it twice
+
+9l: moves 9 letters
+30i- ESC: lisää 30 - merkkiä
+
+fq: etsi seuraava q
+f3q: etsi kolmas q
+
+shift+5: siirry ( ) loppuun
+
+0: rivin alkuun
+$: rivin loppuun
+
+#: edellinen kursorin alla oleva sana
+*: seuraava kursorin alla oleva sana
+
+g: tiedoston alkuun
+G: tiedoston loppuun
+5G: tietty rivi
+
+/sana: hae sanaa
+n: edellinen
+N: seuraava
+
+o ja O: lisää uuden rivin
+
+x: poistaa kirjaimen kursorin alta
+
+re: vaihtaa kursorin alla olevan kirjaimen e kirjaimeksi, jos haluat vaihtaa ilman että menet insert modeen
+
+d2e: poista 2 sanaa
+dw: poista eka sana kursorin oikeella puolella
+
+.: toista edellinen komento
+
+v: visual mode
+ e: select word
+ d: delete word
+
+
+gg 	go to top of the file
+
+:w save
+:q quit
+:q! quit without saving
+:e edit file (:e path...)
+
+u: undo
+ctrl + R: redo
+
+:help
+
+
+: command mode
+esc: normal mode
+i: insert mode
+v: visual mode
+-----------------------------------------------
+splits
+
+:b#	// cycle between screens
+
+:vsplit optional_path_to_file // vertical split
+ctrl + w then movement key to change focused screen
+ctrl + w then number and + or - (vertical) or > or < (horizontal) changes split sizes
+ctrl + w then = makes screens equally sized
+:q closes windows
+:ls shows files in buffer
+:sb index, opens from buffer
+:vert sb2	// opens from buffer to vertical split
+
+:tabedit file_path	// opens new tab
+:tabe file_path		//  same thing
+gt or gT to move between tabs
+
+-------------
+plugins install
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+
+add to vimrc file:
+
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+then google vim rails or vim ruby and clone plugins
+
+-----------------------
+searching
+
+/backbone	// search backbone word
+search next press n (next) N (previous)
+?function	// same but search backwards
+
+:set incsearch	//you can also put this to vim conf file
+// it makes search visible instantly, searches after every addition to string
+
+:set ignorecase	// makes search not case sensitive
+
+:set hlsearch	// highlight search, makes all searches visible
+:nohlsearch	// hides it alias (noh)
+
+/.[aeiou]	// regular expressions works with vim
+/\n\n		// show blank line breaks
+
+d then /fire	// removes everything from cursor to word fire
+
+---------------------------------
+rails stuff
+
+
+:Rfind event	// search files with event
+tab to search next
+
+
+gf		// go to thing that is under cursor, like method or atleast classes
+
+:Runittest	// go to test if you are model
+:Rcontroller	// go to controller
+:Rfunctionaltest
+
+:RVunittest	// when in model, you can split screen open unit test
+:RSunittest	// same but horizontal
+:RTunittest	// same but open in tab instead of splitscreen
+
+
+:Rake		// run this file of tests
+
+:Rgenerate migration add_foo_to_bar	// use rails generate inside vim
+
+
+snipmate plugin does for example when you write def and press tab, it createds method structure
+vim/snippets/ruby.snippets	// you can change settings there
+
+
+ctags application	// jump to method under cursor
+
+ctags -R --exclude=.git --exclude=log *		// dont index git and log files
+
+ctrl ]	// search for method
+
+
+
+
+ack application
+
+ack --ruby controller	//find controller word in ruby file types
+ack --help-types
+
+set grepprg=ack	// set inside vimrc
+
+
+ci"	// delete all inside double "
+ci'	// same '
+
+da"	// delete also quotes itself
+
+
+go somewhere and come back:	gi or ge // not sure which one
+
+
+ctrl o	// go previous place
+ctrl i	// go next place
+
+
+
+tComment	// comments lines easier
+
+-----------------------------------
+commands
+
+
+a	// append
+A	// append to end of line
+
+u	// undo
+
+o	// start typing to next line
+
