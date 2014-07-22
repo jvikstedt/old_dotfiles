@@ -38,7 +38,7 @@ set tabstop=2
 retab
 set smartindent
 set smarttab
-set number
+set relativenumber
 
 set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
@@ -86,6 +86,18 @@ nnoremap <C-k> :m .-2<CR>==
 " hide search highlight
 noremap <C-l> :nohlsearch<CR>
 
+" disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" also in insert mode
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
+
 " indent with tab, shift tab and backspace
 nmap <TAB> >>
 nmap <S-TAB> <<
@@ -100,3 +112,4 @@ inoremap <C-k> <ESC>:m .-2<CR>==gi
 " switch lines
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+
