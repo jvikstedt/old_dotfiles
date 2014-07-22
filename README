@@ -11,12 +11,8 @@ git submodule update
 git submodule add git://github.com/blabla.git bundle/name_of_the_plugin
 
 # If you want to disable capslock and use it to go normal mode on vim use this
-# Add to bashrc
-# Load .Xmodmap
-if [ -f ~/.vim/Xmodmap ]; then
-  xmodmap ~/.vim/Xmodmap
-fi
-
+# Add this to .profile
+setxkbmap -option caps:escape
 
 # vim-gtk has clipboard support, atleast my xfce defaulted to vim-tiny
 # and had no support for clipboards
