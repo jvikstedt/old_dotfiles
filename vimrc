@@ -71,6 +71,9 @@ if version >= 700
   au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
 
+hi MatchParen ctermbg=0
+hi MatchParen ctermfg=Red
+
 " switch tabs with ö and ä
 :map ö :tabp <Enter>
 :map ä :tabn <Enter>
