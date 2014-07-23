@@ -92,6 +92,12 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
 " also in insert mode
 inoremap <Up> <NOP>
 inoremap <Down> <NOP>
