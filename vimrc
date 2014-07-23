@@ -53,8 +53,6 @@ else
   set clipboard=unnamed
 endif
 
-" first, enable status line always
-set laststatus=2
 
 "highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
@@ -65,6 +63,9 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 
+" first, enable status line always
+set laststatus=2
+
 " now set it up to change the status line based on mode
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
@@ -73,6 +74,8 @@ endif
 
 hi MatchParen ctermbg=0
 hi MatchParen ctermfg=Red
+
+let mapleader = ","
 
 " switch tabs with ö and ä
 :map ö :tabp <Enter>
@@ -92,11 +95,20 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-
 :command WQ wq
 :command Wq wq
 :command W w
 :command Q q
+
+nmap J 5j
+nmap K 5k
+nmap H 5h
+nmap L 5l
+
+vmap J 5j
+vmap K 5k
+vmap H 5h
+vmap L 5l
 
 " also in insert mode
 inoremap <Up> <NOP>
