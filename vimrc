@@ -16,7 +16,6 @@ set ignorecase
 set hlsearch
 set smartcase
 set incsearch
-set mouse=a
 set ttimeoutlen=100
 set vb
 set ruler
