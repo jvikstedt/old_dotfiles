@@ -1,7 +1,7 @@
 git clone git@github.com:Janno90/dotfiles.git ~/.vim
 
 # go to ~ folder and run this line to create link to vimrc file
-ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
 
 # go to .vim folder and run these commands:
 git submodule init
