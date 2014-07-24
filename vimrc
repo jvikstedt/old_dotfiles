@@ -94,6 +94,11 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
 nmap J 5j
 nmap K 5k
 nmap H 5h
