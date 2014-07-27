@@ -55,8 +55,8 @@ endif
 
 set background=dark
 set t_Co=256
-set t_Co=88
-colorscheme railscasts
+
+colorscheme sexy-railscasts-256
 
 "highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
