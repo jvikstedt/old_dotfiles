@@ -53,6 +53,11 @@ else
 endif
 
 
+set background=dark
+set t_Co=256
+set t_Co=88
+colorscheme railscasts
+
 "highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
@@ -74,7 +79,6 @@ endif
 hi MatchParen ctermbg=0
 hi MatchParen ctermfg=Red
 
-hi Comment ctermfg=3
 
 let mapleader = ","
 
