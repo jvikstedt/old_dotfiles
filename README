@@ -18,4 +18,4 @@ setxkbmap -option caps:escape
 # and had no support for clipboards
 
 # To enable 256 colors on terminal use this on your bashrc
-export TERM=xterm-256color
+echo "export TERM=xterm-256color" >> ~/.bashrc
