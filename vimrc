@@ -74,6 +74,8 @@ endif
 hi MatchParen ctermbg=0
 hi MatchParen ctermfg=Red
 
+hi Comment ctermfg=3
+
 let mapleader = ","
 
 " switch tabs with ö and ä
