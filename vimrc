@@ -79,6 +79,7 @@ endif
 hi MatchParen ctermbg=0
 hi MatchParen ctermfg=Red
 
+hi LineNr ctermbg=63
 
 let mapleader = ","
 
