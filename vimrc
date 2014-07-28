@@ -73,7 +73,7 @@ set laststatus=2
 " now set it up to change the status line based on mode
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
+  au InsertLeave * hi StatusLine ctermbg=0 ctermfg=12
 endif
 
 hi MatchParen ctermbg=0
