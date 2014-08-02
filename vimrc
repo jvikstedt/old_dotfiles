@@ -38,6 +38,7 @@ retab
 set smartindent
 set smarttab
 set relativenumber
+set number
 
 set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
@@ -89,17 +90,26 @@ let mapleader = ","
 
 " " Normal mode
 " switch lines
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
+nnoremap <DOWN> :m .+1<CR>==
+nnoremap <UP> :m .-2<CR>==
 
 " hide search highlight
-noremap <C-l> :nohlsearch<CR>
+" noremap <C-l> :nohlsearch<CR>
 
 " disable arrow keys
-noremap <Up> <NOP>
-noremap <Down> <NOP>
+" noremap <Up> <NOP>
+" noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" disable Shift-K, because its annoys me
+nnoremap K <NOP>
+
+" also in insert mode
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
 
 " Remove trailing whitespace with F5
 :nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
@@ -109,34 +119,14 @@ noremap <Right> <NOP>
 :command W w
 :command Q q
 
-nmap J 5j
-nmap K 5k
-nmap H 5h
-nmap L 5l
+noremap <C-j> 5j
+noremap <C-k> 5k
+noremap <C-h> 5h
+noremap <C-l> 5l
 
-vmap J 5j
-vmap K 5k
-vmap H 5h
-vmap L 5l
+vnoremap <C-j> 5j
+vnoremap <C-k> 5k
+vnoremap <C-h> 5h
+vnoremap <C-l> 5l
 
-" also in insert mode
-inoremap <Up> <NOP>
-inoremap <Down> <NOP>
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
-
-" indent with tab, shift tab and backspace
-nmap <TAB> >>
-nmap <S-TAB> <<
-nmap <BS> <<
-
-" " Insert mode
-" switch lines
-inoremap <C-j> <ESC>:m .+1<CR>==gi
-inoremap <C-k> <ESC>:m .-2<CR>==gi
-
-" " Visual mode
-" switch lines
-vnoremap <C-j> :m '>+1<CR>gv=gv
-vnoremap <C-k> :m '<-2<CR>gv=gv
 
