@@ -97,8 +97,8 @@ let mapleader = ","
 " noremap <C-l> :nohlsearch<CR>
 
 " disable arrow keys
-" noremap <Up> <NOP>
-" noremap <Down> <NOP>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
