@@ -90,8 +90,8 @@ let mapleader = ","
 
 " " Normal mode
 " switch lines
-nnoremap <DOWN> :m .+1<CR>==
-nnoremap <UP> :m .-2<CR>==
+" nnoremap <DOWN> :m .+1<CR>==
+" nnoremap <UP> :m .-2<CR>==
 
 " hide search highlight
 " noremap <C-l> :nohlsearch<CR>
