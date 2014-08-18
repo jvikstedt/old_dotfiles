@@ -93,6 +93,9 @@ let mapleader = ","
 " nnoremap <DOWN> :m .+1<CR>==
 " nnoremap <UP> :m .-2<CR>==
 
+:map Ö :m .+1<CR>==
+:map Ä :m .-2<CR>==
+
 " hide search highlight
 " noremap <C-l> :nohlsearch<CR>
 
