@@ -1,7 +1,6 @@
 set encoding=utf8
 
 execute pathogen#infect()
-call pathogen#helptags()
 filetype plugin on
 filetype plugin indent on
 
@@ -10,13 +9,11 @@ set autoindent
 set ts=2
 set shiftwidth=2
 set expandtab
-set nocompatible
 set showmatch
 set ignorecase
 set hlsearch
 set smartcase
 set incsearch
-set ttimeoutlen=100
 set vb
 set ruler
 set scrolloff=2
@@ -30,10 +27,7 @@ set backspace=indent,eol,start
 set history=1000
 set showcmd
 set showmode
-set gcr=a:blinkon0
 set autoread
-set expandtab
-set tabstop=2
 retab
 set smartindent
 set smarttab
@@ -41,12 +35,16 @@ set relativenumber
 set number
 set mouse=a
 
-set nowrap "Don't wrap lines
+"set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
 
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
+
+"vim undo
+set undofile
+set undodir=~/.vim/undodir
 
 if has('unnamedplus')
   set clipboard=unnamedplus
@@ -67,10 +65,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-
-" first, enable status line always
-set laststatus=2
 
 " now set it up to change the status line based on mode
 if version >= 700
