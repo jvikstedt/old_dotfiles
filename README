@@ -19,3 +19,14 @@ setxkbmap -option caps:escape
 
 # To enable 256 colors on terminal use this on your bashrc
 echo "export TERM=xterm-256color" >> ~/.bashrc
+
+
+#add to your .bashrc
+#this currently contains only aliases
+source ~/.vim/bashrc
+
+#global ignore
+#run this command to set up global ignore file
+git config --global core.excludesfile ~/.vim/.gitignore_global
+
+
