@@ -14,6 +14,13 @@ else
   echo "setxkbmap -option caps:escape" >> ~/.profile
 fi
 
+if grep -q "setxkbmap -option caps:escape" "../.bashrc";
+then
+  echo ".bashrc already contains escape fix"
+else
+  echo "setxkbmap -option caps:escape" >> ~/.bashrc
+fi
+
 if grep -q "source ~/.vim/bashrc" "../.bashrc";
 then
   echo ".bashrc already contains source to vim bashrc"
