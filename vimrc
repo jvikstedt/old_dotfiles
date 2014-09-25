@@ -39,6 +39,7 @@ set smartindent
 set smarttab
 set relativenumber
 set number
+set mouse=a
 
 set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
