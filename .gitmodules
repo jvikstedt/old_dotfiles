@@ -22,3 +22,6 @@
 [submodule "bundle/AutoComplPop"]
 	path = bundle/AutoComplPop
 	url = https://github.com/vim-scripts/AutoComplPop.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = git://github.com/lunaru/vim-less.git
