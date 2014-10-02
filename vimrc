@@ -18,7 +18,7 @@ set vb
 set ruler
 set scrolloff=2
 set laststatus=2
-set list listchars=tab:»·,trail:·
+set list listchars=tab:-·,trail:·
 set nofoldenable
 set wildmenu
 set wildmode=list:longest,full

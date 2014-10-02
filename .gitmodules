@@ -28,3 +28,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = git://github.com/lunaru/vim-less.git
