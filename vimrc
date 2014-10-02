@@ -66,6 +66,12 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+"shortcut F9 to syntax check
+autocmd FileType ruby map <F9> :w<CR>:!ruby -c %<CR>
+
+"shortcut f8 for tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " now set it up to change the status line based on mode
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
