@@ -38,6 +38,9 @@ set number
 "set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
 
+
+set tags=./tags;
+
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
@@ -124,7 +127,7 @@ nnoremap <C-up> :resize -5<cr>
 nnoremap <C-right> :vertical resize +5<cr>
 
 " Remove trailing whitespace with F5
-:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+:nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 :command WQ wq
 :command Wq wq
