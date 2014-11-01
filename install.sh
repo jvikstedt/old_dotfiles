@@ -27,3 +27,4 @@ git submodule init
 git submodule update
 
 sudo apt-get install silversearcher-ag
+sudo apt-get install exuberant-ctags
