@@ -25,3 +25,5 @@ git config --global core.excludesfile ~/.vim/.gitignore_global
 
 git submodule init
 git submodule update
+
+sudo apt-get install silversearcher-ag
