@@ -5,6 +5,11 @@ execute pathogen#infect()
 filetype plugin on
 filetype plugin indent on
 
+augroup rubypath
+  autocmd!
+  autocmd FileType ruby setlocal suffixesadd+=.rb
+augroup END
+
 syntax on
 set autoindent
 set ts=2
