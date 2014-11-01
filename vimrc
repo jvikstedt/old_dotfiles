@@ -1,3 +1,4 @@
+runtime macros/matchit.vim
 set encoding=utf8
 
 execute pathogen#infect()
