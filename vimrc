@@ -92,7 +92,18 @@ hi MatchParen ctermfg=Red
 
 hi LineNr ctermbg=63
 
-let mapleader = ","
+noremap <Space> <NOP>
+:let mapleader = " "
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+:map <leader>j :m .+1<CR>==
+:map <leader>k :m .-2<CR>==
+
 
 " switch tabs with ö and ä
 :map ö :tabp <Enter>

@@ -40,3 +40,6 @@
 [submodule "bundle/robotframework-vim"]
 	path = bundle/robotframework-vim
 	url = git://github.com/mfukar/robotframework-vim.git
+[submodule "bundle/vim-rspec"]
+	path = bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
