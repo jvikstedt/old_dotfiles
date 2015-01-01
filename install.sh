@@ -7,6 +7,13 @@ else
   ln -s ~/.vim/vimrc ~/.vimrc
 fi
 
+if [ -f ~/.tmux.conf ];
+then
+  echo "tmux.conf already exists in home dir";
+else
+  ln -s ~/.vim/tmux.conf ~/.tmux.conf
+fi
+
 if grep -q "setxkbmap -option caps:escape" "../.profile";
 then
   echo ".profile already contains escape fix"
