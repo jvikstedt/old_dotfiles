@@ -1,0 +1,30 @@
+tmus new -s session-name
+
+tmux kill-session session-name
+
+ctrl + b    // tmux command
+
+tmux list-sessions
+tmux ls
+
+attach:
+tmux a
+tmux a -t session-name
+
+- Add these after ctrl + b
+c   // new tab(window)
+,   // rename tab
+p   // previous tab
+n   // next tab
+w   // list windows
+
+d   // detach session
+
+%   // split vertically
+"   // split horizontal
+x   // close current pane
+
+:   // open command line
+split-window  // horizontal split
+
+
