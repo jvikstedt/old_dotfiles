@@ -151,6 +151,10 @@ nnoremap <C-right> :vertical resize +5<cr>
 :command W w
 :command Q q
 
+
+" Bind 2xleader to goto tag
+noremap <leader><leader> <C-]>
+
 noremap <C-j> 5j
 noremap <C-k> 5k
 noremap <C-h> 5h
