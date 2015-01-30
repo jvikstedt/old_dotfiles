@@ -46,3 +46,6 @@
 [submodule "tmux_plugins/tmux-yank"]
 	path = tmux_plugins/tmux-yank
 	url = https://github.com/tmux-plugins/tmux-yank
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
