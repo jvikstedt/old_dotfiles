@@ -23,8 +23,11 @@ d   // detach session
 %   // split vertically
 "   // split horizontal
 x   // close current pane
+[   // copy mode
 
 :   // open command line
 split-window  // horizontal split
 
+^b then ↑ to move to the above pane (works for all four arrows)
 
+^b then ⎇↑ to resize the current pane up (works for all four arrows)  (alt)
