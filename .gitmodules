@@ -43,3 +43,9 @@
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "tmux_plugins/tmux-yank"]
+	path = tmux_plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git

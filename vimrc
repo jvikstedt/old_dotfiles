@@ -151,6 +151,10 @@ nnoremap <C-right> :vertical resize +5<cr>
 :command W w
 :command Q q
 
+
+" Bind leader g to goto tag
+noremap <leader>g <C-]>
+
 noremap <C-j> 5j
 noremap <C-k> 5k
 noremap <C-h> 5h
