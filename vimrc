@@ -165,4 +165,5 @@ vnoremap <C-k> 5k
 vnoremap <C-h> 5h
 vnoremap <C-l> 5l
 
-
+" Use tslime when running tests
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
