@@ -2,14 +2,14 @@
 
 if [ -f ~/.vimrc ];
 then
-  echo "vimrc already exists in home directory";
+  echo ".vimrc already exists in home directory";
 else
   ln -s ~/.vim/vimrc ~/.vimrc
 fi
 
-if [ -f ~/.tmuxinator/ ];
+if [ -d ~/.tmuxinator/ ];
 then
-  echo "tmuxinator folder already exists";
+  echo ".tmuxinator folder already exists";
 else
   ln -s ~/.vim/tmuxinator ~/.tmuxinator
 fi
