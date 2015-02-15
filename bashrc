@@ -7,3 +7,5 @@ alias tma="tmux -2 attach -t $1"
 alias tmk="tmux kill-session -t $1"
 
 export EDITOR='vim'
+
+source ~/.vim/tmuxinator.bash

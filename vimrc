@@ -155,18 +155,18 @@ nnoremap <C-right> :vertical resize +5<cr>
 " Bind leader g to goto tag
 noremap <leader>g <C-]>
 
-noremap <S-j> 5j
-noremap <S-k> 5k
-noremap <S-h> 5h
-noremap <S-l> 5l
-
-vnoremap <S-j> 5j
-vnoremap <S-k> 5k
-vnoremap <S-h> 5h
-vnoremap <S-l> 5l
-
 " Use tslime when running tests
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+noremap <C-j> 5j
+noremap <C-k> 5k
+noremap <C-h> 5h
+noremap <C-l> 5l
+
+vnoremap <C-j> 5j
+vnoremap <C-k> 5k
+vnoremap <C-h> 5h
+vnoremap <C-l> 5l
 
 " ctrlp reload directory when changing working directory
 let g:ctrlp_working_path_mode = 0
