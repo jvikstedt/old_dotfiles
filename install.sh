@@ -7,6 +7,13 @@ else
   ln -s ~/.vim/vimrc ~/.vimrc
 fi
 
+if [ -f ~/.tmuxinator/ ];
+then
+  echo "tmuxinator folder already exists";
+else
+  ln -s ~/.vim/tmuxinator ~/.tmuxinator
+fi
+
 if [ -f ~/.tmux.conf ];
 then
   echo "tmux.conf already exists in home dir";
