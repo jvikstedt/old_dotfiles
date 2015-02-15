@@ -167,3 +167,6 @@ vnoremap <S-l> 5l
 
 " Use tslime when running tests
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+" ctrlp reload directory when changing working directory
+let g:ctrlp_working_path_mode = 0
