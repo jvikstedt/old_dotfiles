@@ -24,4 +24,6 @@ windows:
       panes:
         - vim
         - #nothing
-        - bundle exec rails c
+        - tail -f log/development.log
+  - console: bundle exec rails c
+  - server: bundle exec rails s
