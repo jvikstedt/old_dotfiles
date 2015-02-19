@@ -44,7 +44,6 @@ set number
 "set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
 
-
 set tags=./tags;
 
 set scrolloff=8
@@ -61,11 +60,8 @@ else
   set clipboard=unnamed
 endif
 
-
-set background=dark
 set t_Co=256
-
-colorscheme sexy-railscasts-256
+colorscheme molokai
 
 "highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
@@ -87,10 +83,6 @@ if version >= 700
   au InsertLeave * hi StatusLine ctermbg=0 ctermfg=12
 endif
 
-hi MatchParen ctermbg=0
-hi MatchParen ctermfg=Red
-
-hi LineNr ctermbg=63
 
 noremap <Space> <NOP>
 :let mapleader = " "
@@ -134,7 +126,6 @@ inoremap <Up> <NOP>
 inoremap <Down> <NOP>
 inoremap <Left> <NOP>
 inoremap <Right> <NOP>
-
 
 
 " resize current buffer by +/- 5 
