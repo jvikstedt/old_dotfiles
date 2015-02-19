@@ -67,6 +67,10 @@ endif
 set t_Co=256
 colorscheme molokai
 
+" Modifies matching tag colors
+hi MatchParen ctermbg=0
+hi MatchParen ctermfg=Red
+
 "highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
