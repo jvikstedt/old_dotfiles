@@ -49,3 +49,9 @@
 [submodule "bundle/stupid-easymotion"]
 	path = bundle/stupid-easymotion
 	url = git@github.com:joequery/Stupid-EasyMotion.git
+[submodule "bundle/vim-signature"]
+	path = bundle/vim-signature
+	url = https://github.com/kshenoy/vim-signature
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = https://github.com/tpope/vim-endwise
