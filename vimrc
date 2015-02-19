@@ -44,8 +44,10 @@ set number
 "set nowrap "Don't wrap lines
 set linebreak "Wrap lines at convenient points
 
+" Set default tag folder as project root
 set tags=./tags;
 
+" Scrolling settings
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
@@ -54,12 +56,14 @@ set sidescroll=1
 set undofile
 set undodir=~/.vim/undodir
 
+"Clipboard support
 if has('unnamedplus')
   set clipboard=unnamedplus
 else
   set clipboard=unnamed
 endif
 
+" Colorscheme
 set t_Co=256
 colorscheme molokai
 
@@ -83,7 +87,7 @@ if version >= 700
   au InsertLeave * hi StatusLine ctermbg=0 ctermfg=12
 endif
 
-
+" Bind space as leader key
 noremap <Space> <NOP>
 :let mapleader = " "
 
@@ -93,9 +97,9 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+"Leader + j or k to swap lines
 :map <leader>j :m .+1<CR>==
 :map <leader>k :m .-2<CR>==
-
 
 " switch tabs with ö and ä
 :map ö :tabp <Enter>
@@ -106,6 +110,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 " nnoremap <DOWN> :m .+1<CR>==
 " nnoremap <UP> :m .-2<CR>==
 
+" Ö and Ä to switch lines
 :map Ö :m .+1<CR>==
 :map Ä :m .-2<CR>==
 
@@ -127,8 +132,7 @@ inoremap <Down> <NOP>
 inoremap <Left> <NOP>
 inoremap <Right> <NOP>
 
-
-" resize current buffer by +/- 5 
+" resize current buffer by +/- 5
 nnoremap <C-left> :vertical resize -5<cr>
 nnoremap <C-down> :resize +5<cr>
 nnoremap <C-up> :resize -5<cr>
@@ -137,6 +141,7 @@ nnoremap <C-right> :vertical resize +5<cr>
 " Remove trailing whitespace with F5
 :nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" Added some commands because missclicking often
 :command WQ wq
 :command Wq wq
 :command W w
