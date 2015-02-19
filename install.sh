@@ -44,3 +44,5 @@ sudo apt-get install silversearcher-ag
 sudo apt-get install exuberant-ctags
 sudo apt-get install tmux
 sudo apt-get install xclip
+
+gem install tmuxinator
