@@ -1,34 +1,6 @@
 git clone git@github.com:Janno90/dotfiles.git ~/.vim
 
-# You can install all this by running ./install
-
-# go to ~ folder and run this line to create link to vimrc file
-ln -s ~/.vim/vimrc ~/.vimrc
-
-# go to .vim folder and run these commands:
-git submodule init
-git submodule update
+Install everything by running ./install
 
 # To add new submodules use this:
 git submodule add git://github.com/blabla.git bundle/name_of_the_plugin
-
-# If you want to disable capslock and use it to go normal mode on vim use this
-# Add this to .profile
-setxkbmap -option caps:escape
-
-# vim-gtk has clipboard support, atleast my xfce defaulted to vim-tiny
-# and had no support for clipboards
-
-# To enable 256 colors on terminal use this on your bashrc
-echo "export TERM=xterm-256color" >> ~/.bashrc
-
-
-#add to your .bashrc
-#this currently contains only aliases
-source ~/.vim/bashrc
-
-#global ignore
-#run this command to set up global ignore file
-git config --global core.excludesfile ~/.vim/.gitignore_global
-
-
