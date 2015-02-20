@@ -20,4 +20,4 @@ sudo apt-get install nodejs
 
 sudo add-apt-repository ppa:synapse-core/ppa
 sudo apt-get update
-sudo apt-get install synapsex
+sudo apt-get install synapse
