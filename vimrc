@@ -159,3 +159,11 @@ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 " ctrlp reload directory when changing working directory
 let g:ctrlp_working_path_mode = 0
+
+" Stupid hack to make arrow keys work when using screen term
+if &term =~ '^screen'
+  execute "set <xUp>=\e[1;*A"
+  execute "set <xDown>=\e[1;*B"
+  execute "set <xRight>=\e[1;*C"
+  execute "set <xLeft>=\e[1;*D"
+endif
