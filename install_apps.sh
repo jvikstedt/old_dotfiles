@@ -21,3 +21,7 @@ sudo apt-get install nodejs
 sudo add-apt-repository ppa:synapse-core/ppa
 sudo apt-get update
 sudo apt-get install synapse
+
+sudo apt-get install vim-gtk
+
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
