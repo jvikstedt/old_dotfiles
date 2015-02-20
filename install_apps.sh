@@ -17,3 +17,7 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
+
+sudo add-apt-repository ppa:synapse-core/ppa
+sudo apt-get update
+sudo apt-get install synapsex
