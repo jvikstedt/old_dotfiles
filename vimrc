@@ -12,33 +12,32 @@ augroup END
 
 syntax on
 set autoindent
-set ts=2
-set shiftwidth=2
-set expandtab
+set ts=2          "tabsize
+set shiftwidth=2  "indentation width
+set expandtab     "tabs as spaces
 set showmatch
-set ignorecase
-set hlsearch
+set ignorecase    "ignore case on search
+set hlsearch      "highlight search results
 set smartcase
 set incsearch
 set vb
 set ruler
 set scrolloff=2
 set laststatus=2
-set list listchars=tab:-·,trail:·
+set list listchars=tab:-·,trail:· "Tab and trail show characters
 set nofoldenable
 set wildmenu
 set wildmode=list:longest,full
 
 set backspace=indent,eol,start
-set history=1000
+set history=1000                  "undo history size
 set showcmd
 set showmode
 set autoread
-retab
 set smartindent
 set smarttab
-set relativenumber
-set number
+set relativenumber               "Enable relative line numbers
+set number                       "Show current line as normal line number
 "set mouse=a
 
 "set nowrap "Don't wrap lines
