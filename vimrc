@@ -163,3 +163,6 @@ let g:ctrlp_working_path_mode = 0
 if &term =~ '256color'
   set t_ut=
 endif
+
+" Map leader b to search from buffer
+map <Leader>b :CtrlPBuffer<cr>
