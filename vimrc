@@ -166,3 +166,7 @@ endif
 
 " Map leader b to search from buffer
 map <Leader>b :CtrlPBuffer<cr>
+
+" Faster jk
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)

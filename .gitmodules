@@ -43,9 +43,12 @@
 [submodule "tmux_plugins/tmux-yank"]
 	path = tmux_plugins/tmux-yank
 	url = https://github.com/tmux-plugins/tmux-yank
-[submodule "bundle/stupid-easymotion"]
-	path = bundle/stupid-easymotion
-	url = git@github.com:joequery/Stupid-EasyMotion.git
 [submodule "bundle/vim-signature"]
 	path = bundle/vim-signature
 	url = https://github.com/kshenoy/vim-signature
+[submodule "bundle/accelerated-jk"]
+	path = bundle/accelerated-jk
+	url = git@github.com:rhysd/accelerated-jk.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
