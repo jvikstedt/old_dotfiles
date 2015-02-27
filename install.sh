@@ -45,4 +45,4 @@ sudo apt-get install exuberant-ctags
 sudo apt-get install tmux
 sudo apt-get install xclip
 
-gem install tmuxinator
+gem install tmuxinator -v 0.6.9
