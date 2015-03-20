@@ -6,13 +6,13 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 
 sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 
-curl -L https://get.rvm.io | bash -s stable # You might get error here, just do what is instructed after error
-source ~/.rvm/scripts/rvm
-echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
-rvm install 2.2
-rvm use 2.2 --default
+#curl -L https://get.rvm.io | bash -s stable # You might get error here, just do what is instructed after error
+#source ~/.rvm/scripts/rvm
+#echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
+#rvm install 2.2
+#rvm use 2.2 --default
 
-echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+#echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
