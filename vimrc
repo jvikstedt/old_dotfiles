@@ -170,3 +170,6 @@ map <Leader>b :CtrlPBuffer<cr>
 " Faster jk
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
+
+" Allow more search results for ctrlp
+let g:ctrlp_match_window = 'results:100'
