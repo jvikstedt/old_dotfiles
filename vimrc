@@ -176,3 +176,6 @@ let g:ctrlp_match_window = 'results:100'
 
 " Bind leader + p to open ctag search with ctrlp
 nnoremap <leader>p :CtrlPTag<cr>
+
+" Turn easytags highlighting off
+let g:easytags_auto_highlight = 0
