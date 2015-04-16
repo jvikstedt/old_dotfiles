@@ -11,7 +11,7 @@ sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-d
 #echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
 #rvm install 2.2
 #rvm use 2.2 --default
-
+#
 #echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
 sudo add-apt-repository ppa:chris-lea/node.js
