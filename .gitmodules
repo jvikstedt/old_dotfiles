@@ -63,4 +63,4 @@
 	url = https://github.com/slim-template/vim-slim.git
 [submodule "bundle/vim-tags"]
 	path = bundle/vim-tags
-	url = https://github.com/szw/vim-tags.git
+	url = https://github.com/Janno90/vim-tags.git
