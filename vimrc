@@ -168,7 +168,7 @@ endif
 map <Leader>b :CtrlPBuffer<cr>
 
 " Allow more search results for ctrlp
-let g:ctrlp_match_window = 'results:100'
+let g:ctrlp_match_window = 'results:30'
 
 " Bind leader + p to open ctag search with ctrlp
 nnoremap <leader>p :CtrlPTag<cr>
