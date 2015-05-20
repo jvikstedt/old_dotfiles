@@ -141,7 +141,7 @@ nnoremap <C-down> :resize +5<cr>
 nnoremap <C-up> :resize -5<cr>
 nnoremap <C-right> :vertical resize +5<cr>
 
-" Remove trailing whitespace with F5
+" Remove trailing whitespace with F4
 :nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Added some commands because missclicking often
@@ -172,3 +172,8 @@ let g:ctrlp_match_window = 'results:100'
 
 " Bind leader + p to open ctag search with ctrlp
 nnoremap <leader>p :CtrlPTag<cr>
+
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+
+nnoremap <F5> :GundoToggle<CR>
