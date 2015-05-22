@@ -55,13 +55,6 @@ set sidescroll=1
 set undofile
 set undodir=~/.vim/undodir
 
-"Clipboard support
-if has('unnamedplus')
-  set clipboard=unnamedplus
-else
-  set clipboard=unnamed
-endif
-
 " Colorscheme
 set t_Co=256
 colorscheme molokai
