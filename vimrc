@@ -166,7 +166,13 @@ let g:ctrlp_match_window = 'results:30'
 " Bind leader + p to open ctag search with ctrlp
 nnoremap <leader>p :CtrlPTag<cr>
 
-let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
+let g:EclimCompletionMethod = 'omnifunc'
+
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
+let g:neocomplete#force_omni_input_patterns.java =
+  \ '\%(\h\w*\|)\)\.\w*'
 
 nnoremap <F5> :GundoToggle<CR>
