@@ -166,5 +166,6 @@ let g:ctrlp_match_window = 'results:30'
 " Bind leader + p to open ctag search with ctrlp
 nnoremap <leader>p :CtrlPTag<cr>
 
+let g:EclimCompletionMethod = 'omnifunc'
 
 nnoremap <F5> :GundoToggle<CR>
